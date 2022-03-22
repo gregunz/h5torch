@@ -1,0 +1,8 @@
+# dev
+isort
+black
+flake8
+flake8_docstrings
+coverage
+pdoc
+jupyter

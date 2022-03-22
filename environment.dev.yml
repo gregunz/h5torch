@@ -1,0 +1,15 @@
+name: h5torch
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python<3.10 # to avoid conflicts as it is a bit new
+  - pip
+  # torch related
+  - numpy
+  - pytorch
+  # dev
+  - nodejs>=15.14.0 #<15.15 # for pyright: $ npm install -g pyright@1.1.45
+  - pip:
+    - -e .[h5torch-dev]
